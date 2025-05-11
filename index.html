@@ -316,6 +316,7 @@
             </div>
         </div>
 
+
         <div class="tab-content" id="application">
             <h2 class="workflow-title">Application Process Workflow</h2>
             <div class="diagram-container">
@@ -395,7 +396,6 @@
                     A[Student Login] --> B[Student Dashboard]
                     B --> C[View Profile]
                     B --> D[View Courses]
-                    B --> E[View Assignments]
                     B --> F[Check Schedule]
                     B --> G[View Announcements]
 
@@ -405,11 +405,6 @@
                     D --> D1[Browse Available Courses]
                     D1 --> D2[Apply for Course]
                     D --> D3[View Enrolled Courses]
-                    D3 --> D4[Access Course Materials]
-
-                    E --> E1[View Pending Assignments]
-                    E --> E2[Submit Assignment]
-                    E --> E3[View Graded Assignments]
 
                     F --> F1[Weekly Schedule]
                     F --> F2[Exam Schedule]
@@ -420,12 +415,13 @@
                     classDef primary fill:#3b82f6,stroke:#1d4ed8,color:white
                     classDef success fill:#10b981,stroke:#059669,color:white
                     classDef warning fill:#f59e0b,stroke:#d97706,color:white
-                    class A,B,C,D,E,F,G primary
+                    class A,B,C,D,F,G primary
                     class C1,C2,D1,D3,F1,F2,G1,G2 success
-                    class D2,D4,E1,E2,E3 warning
+                    class D2 warning
                 </div>
             </div>
         </div>
+
         <div class="tab-content" id="overview">
             <h2 class="workflow-title">System Overview Workflow</h2>
             <div class="diagram-container">
